@@ -1,0 +1,33 @@
+#footer{
+    background: $clr-dark;
+
+    h3{
+        margin: .4rem 0 1rem;
+        color: $clr-white;
+        font-weight:500;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            list-style: none;
+            color: $clr-grey;
+            margin: .3rem 1rem;
+            cursor: pointer;
+            transition: $transition;
+
+            &:hover{
+                color: $clr-white;
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+        font-weight: 500;
+        color: $clr-white;
+        margin-top: 1.6rem;
+    }
+
+}

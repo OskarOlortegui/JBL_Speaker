@@ -1,0 +1,29 @@
+@import './partials/configSetup';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $ff;
+    width: 100vw;
+    overflow-x: hidden;
+}
+    /*JS body toggle class when burger is clicked*/
+    .stop-scrolling { 
+        height: 100%; 
+        overflow: hidden; 
+    }
+
+.general-padding{
+    padding: 2em;
+}
+
+@import './partials/nav';
+@import './partials/showcase';
+@import './partials/video';
+@import './partials/products';
+@import './partials/form';
+@import './partials/foot';
+
+@import './partials/mediaQueries';

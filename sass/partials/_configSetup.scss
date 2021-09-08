@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//variables
+$shadow: 0px 5px 15px rgba(0,0,0,.2);
+$clr-white: #fff;
+$ff: 'Open Sans', sans-serif;
+$clr-dark: #18191f;
+$clr-orange: #ff6700;
+$clr-grey:#7a7a7a;
+$clr-light-grey: #ccc5b9;
+$clr-dark-grey: #585772;
+$link-bg-clr: #333;
+$light-bg: #f8f9fa;
+$border-clr: #ececec;
+$transition: .5s ease;
+
+@mixin flexConfig($a,$b) {
+    display: flex;
+    justify-content: $b;
+    align-items: center;
+    flex-direction: $a;
+}
+@mixin dimension($w,$h){
+    width: $w;
+    height: $h;
+}
+

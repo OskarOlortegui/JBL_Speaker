@@ -1,0 +1,30 @@
+#form{
+    background: $light-bg;
+    @include flexConfig(column, space-around);
+
+    h2{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+}
+#email{
+    width: 200px;
+    height: 2rem;
+    margin-right: 0;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid $clr-light-grey;
+    border-right: 0;
+    outline: none;
+    padding: .5em .4em;
+}
+.form-control input[type='submit']{
+    height: 2rem;
+    margin-left: -4px;
+    padding: .5em .8em;
+    border:none;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    color: $clr-white;
+    background: $clr-orange;
+    cursor: pointer;
+}

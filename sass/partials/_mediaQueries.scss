@@ -1,0 +1,95 @@
+@media (min-width: 576px){
+    .img-speakers img:last-child{
+      display: block;
+    }
+    .general-padding{
+      padding: 30px;
+    }
+    .products{
+        grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    }
+}
+
+@media (min-width: 768px){
+    /*header*/
+    #header{
+        justify-content: space-between;
+    }
+    .burger{
+        display: none;
+    }
+    .nav-bar{
+        position: static;
+        opacity: 1;
+
+        height: auto;
+        width: auto;
+
+        background: none;
+    }
+    #nav-bar ul{
+        flex-direction: row;
+    }
+    #nav-bar ul li{
+        opacity: 1;
+    }
+    #nav-bar ul li a{
+        font-size: 1em;
+        color: $clr-dark;
+    }
+    #nav-bar ul li a:hover{
+        background: none;
+        color: $clr-orange;
+    }
+    /*showcase*/
+    #showcase{
+        flex-direction: row;
+    }
+    .introduction{
+        text-align: left;
+    }
+    .introduction > div{
+        margin-left: 5%;
+    }
+    .intro-text p{
+        width: 86%;
+    }
+
+    /*video*/
+    .video-perks{
+        display: flex;
+        flex-direction: column;
+    }
+    .video-perks li{
+        list-style: none;
+        margin: 1rem 0;
+    }
+    .video-perks li i{
+        margin-right: 5px;
+    }
+    .video-wrapper iframe{
+        width: 46vw;
+    }
+
+    /*Form*/
+    #form{
+        flex-direction: row;
+    }
+    #form h2{
+        margin: 0;
+        font-size: 1.5em;
+    }
+    #email,
+    .form-control input[type='submit']{
+        height: 2.5rem;
+    }
+    /*Footer*/
+    .find-us{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .find-us h3{
+        margin: 0 1rem;
+    }
+}

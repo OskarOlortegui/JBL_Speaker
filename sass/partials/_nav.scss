@@ -1,0 +1,95 @@
+#header{
+    @include flexConfig(row,center);
+    box-shadow: $shadow;
+    padding: .5em 2em;
+
+    /*height: 10vh;*/
+    position: relative;
+
+    &-img img{
+        width: 3em;
+    }
+}
+
+.nav-bar{
+    position: absolute;
+    background: $clr-dark;
+    @include dimension(100%,90vh);
+    top:10vh;
+    z-index: 1;
+    right: -100%;
+    opacity: 0;
+    transition: $transition;
+}
+    /*js toggle*/
+    .active{
+        right: 0;
+        opacity: 1;
+    }
+
+.nav-bar ul{
+    @include flexConfig(column, space-around);
+    height: 100%;
+
+    li{
+        list-style: none;
+        margin: 0 1em;
+        @include dimension(100%,100%);
+        opacity: 0;
+        transition: $transition;
+
+        a{
+            text-decoration: none;
+            color: $clr-light-grey;
+            @include flexConfig(row, center);
+            @include dimension(100%,100%);
+            font-size: 1.5em;
+            font-weight: 600;  
+
+            &:hover{
+                background: $link-bg-clr;
+            }
+        }
+    }
+
+    /*keyframes*/
+    @keyframes showLi{
+        from{
+            opacity: 0;
+            transform: translateX(80px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
+
+/*burger*/
+.burger{
+    position: absolute;
+    top: 2.8vh;
+    right: 8vw;
+    cursor: pointer;
+
+    div{
+        @include dimension(24px,3px);
+        background: $clr-grey;
+        margin: 5px;
+        transition: $transition;
+    }
+    &:hover div{
+        background: $clr-orange;
+    }
+
+}
+/*js lines*/
+.active .l1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.active .l2{
+    opacity: 0;
+}
+.active .l3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
